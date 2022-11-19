@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "b669ac39-1d85-4c09-9a68-d05a6767c824",
+		"name": "LoanCalculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11895096"
+	},
+	"item": [
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "Generate PDF Report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/loan-calculator/report/pdf/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"loan-calculator",
+								"report",
+								"pdf",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Generate Excel Report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/loan-calculator/report/excel/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"loan-calculator",
+								"report",
+								"excel",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Find Loan By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/loan-calculator/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"loan-calculator",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Loan",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"loanAmount\" : 100000.00,\n    \"interestRate\" : 4.0,\n    \"loanTermYears\" : 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/loan-calculator/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"loan-calculator",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Loan By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/loan-calculator/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"loan-calculator",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
