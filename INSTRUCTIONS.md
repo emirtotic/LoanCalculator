@@ -13,8 +13,8 @@ Instructions:
 
 Api Collection list:
 
-* **Create Loan:** http://localhost:9090/api/loan-calculator/create)
-* **Find Loan by ID:** http://localhost:9090/api/loan-calculator/1)
-* **Delete Loan by ID:** http://localhost:9090/api/loan-calculator/2)
-* **Generate PDF report:** http://localhost:9090/api/loan-calculator/report/pdf/3)
-* **Generate Excel report:** http://localhost:9090/api/loan-calculator/report/excel/2)
+* **Create Loan:** http://localhost:9090/api/loan-calculator/create
+* **Find Loan by ID:** http://localhost:9090/api/loan-calculator/1
+* **Delete Loan by ID:** http://localhost:9090/api/loan-calculator/2
+* **Generate PDF report:** http://localhost:9090/api/loan-calculator/report/pdf/3
+* **Generate Excel report:** http://localhost:9090/api/loan-calculator/report/excel/2

@@ -98,7 +98,7 @@ public class LoanCalculatorServiceImpl implements LoanCalculatorService {
             calculationList.add(calculation);
             balance = calculation.getBalanceOwed();
 
-            if (j == (numberOfMonths) - 1) {
+            if (j == (numberOfMonths - 1)) {
                 calculation.setPaymentAmount(payment.add(calculation.getBalanceOwed()));
                 calculation.setBalanceOwed(new BigDecimal(0).setScale(2, RoundingMode.HALF_EVEN));
             }
